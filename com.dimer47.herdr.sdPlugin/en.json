@@ -1,0 +1,118 @@
+{
+  "Description": "Control Herdr from your Stream Deck: agents, spaces, worktrees, panes.",
+  "Category": "Herdr",
+  "Actions": {
+    "com.dimer47.herdr.agents-status": {
+      "Name": "Agents — status",
+      "Tooltip": "Number of agents per state, refreshed automatically."
+    },
+    "com.dimer47.herdr.agent-unblock": {
+      "Name": "Agents — unblock",
+      "Tooltip": "Sends Escape to the first blocked agent."
+    },
+    "com.dimer47.herdr.agent-enter": {
+      "Name": "Agents — confirm",
+      "Tooltip": "Sends Enter to the first blocked agent."
+    },
+    "com.dimer47.herdr.agent-continue": {
+      "Name": "Agents — resume",
+      "Tooltip": "Submits \"Continue.\" to the agent in the focused space."
+    },
+    "com.dimer47.herdr.agent-stop": {
+      "Name": "Agents — interrupt",
+      "Tooltip": "Sends Ctrl+C to the agent in the focused space."
+    },
+    "com.dimer47.herdr.agent-focus": {
+      "Name": "Agents — show blocked",
+      "Tooltip": "Focuses the agent that needs attention."
+    },
+    "com.dimer47.herdr.ws-next": {
+      "Name": "Space — next",
+      "Tooltip": "Next workspace, wrapping around."
+    },
+    "com.dimer47.herdr.ws-prev": {
+      "Name": "Space — previous",
+      "Tooltip": "Previous workspace, wrapping around."
+    },
+    "com.dimer47.herdr.ws-new": {
+      "Name": "Space — new",
+      "Tooltip": "Creates a workspace in a chosen folder."
+    },
+    "com.dimer47.herdr.ws-close": {
+      "Name": "Space — close",
+      "Tooltip": "Closes the focused workspace."
+    },
+    "com.dimer47.herdr.wt-new": {
+      "Name": "Worktree — create",
+      "Tooltip": "Creates a Git worktree and its workspace."
+    },
+    "com.dimer47.herdr.pane-split-right": {
+      "Name": "Pane — split right",
+      "Tooltip": "Splits the current pane to the right."
+    },
+    "com.dimer47.herdr.pane-split-down": {
+      "Name": "Pane — split down",
+      "Tooltip": "Splits the current pane downwards."
+    },
+    "com.dimer47.herdr.pane-zoom": {
+      "Name": "Pane — zoom",
+      "Tooltip": "Toggles zoom on the current pane."
+    },
+    "com.dimer47.herdr.tab-new": {
+      "Name": "Tab — new",
+      "Tooltip": "Creates a tab."
+    },
+    "com.dimer47.herdr.server": {
+      "Name": "Server — status",
+      "Tooltip": "Herdr server state, version and compatibility."
+    },
+    "com.dimer47.herdr.open-herdr": {
+      "Name": "Open Herdr",
+      "Tooltip": "Opens Herdr in Terminal."
+    },
+    "com.dimer47.herdr.wt-remove": {
+      "Name": "Worktree — remove",
+      "Tooltip": "Removes the worktree of the focused space."
+    },
+    "com.dimer47.herdr.tab-close": {
+      "Name": "Tab — close",
+      "Tooltip": "Closes the active tab."
+    },
+    "com.dimer47.herdr.pane-focus-left": {
+      "Name": "Pane — focus left",
+      "Tooltip": "Moves focus to the pane on the left."
+    },
+    "com.dimer47.herdr.pane-focus-right": {
+      "Name": "Pane — focus right",
+      "Tooltip": "Moves focus to the pane on the right."
+    },
+    "com.dimer47.herdr.pane-focus-up": {
+      "Name": "Pane — focus up",
+      "Tooltip": "Moves focus to the pane above."
+    },
+    "com.dimer47.herdr.pane-focus-down": {
+      "Name": "Pane — focus down",
+      "Tooltip": "Moves focus to the pane below."
+    },
+    "com.dimer47.herdr.pane-read": {
+      "Name": "Pane — copy output",
+      "Tooltip": "Copies the last 200 lines of the pane to the clipboard."
+    },
+    "com.dimer47.herdr.pane-close": {
+      "Name": "Pane — close",
+      "Tooltip": "Closes the focused pane."
+    },
+    "com.dimer47.herdr.tab-prev": {
+      "Name": "Tab — previous",
+      "Tooltip": "Previous tab of the space, wrapping around."
+    },
+    "com.dimer47.herdr.tab-next": {
+      "Name": "Tab — next",
+      "Tooltip": "Next tab of the space, wrapping around."
+    },
+    "com.dimer47.herdr.command": {
+      "Name": "Custom command",
+      "Tooltip": "Runs any Herdr command not covered by a dedicated action."
+    }
+  }
+}

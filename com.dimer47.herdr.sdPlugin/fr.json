@@ -1,0 +1,118 @@
+{
+  "Description": "Pilotez Herdr depuis votre Stream Deck : agents, spaces, worktrees, panes.",
+  "Category": "Herdr",
+  "Actions": {
+    "com.dimer47.herdr.agents-status": {
+      "Name": "Agents — état",
+      "Tooltip": "Nombre d'agents par état, rafraîchi automatiquement."
+    },
+    "com.dimer47.herdr.agent-unblock": {
+      "Name": "Agents — débloquer",
+      "Tooltip": "Envoie Échap au premier agent bloqué."
+    },
+    "com.dimer47.herdr.agent-enter": {
+      "Name": "Agents — valider",
+      "Tooltip": "Envoie Entrée au premier agent bloqué."
+    },
+    "com.dimer47.herdr.agent-continue": {
+      "Name": "Agents — relancer",
+      "Tooltip": "Soumet « Continue. » à l'agent du space focalisé."
+    },
+    "com.dimer47.herdr.agent-stop": {
+      "Name": "Agents — interrompre",
+      "Tooltip": "Envoie Ctrl+C à l'agent du space focalisé."
+    },
+    "com.dimer47.herdr.agent-focus": {
+      "Name": "Agents — voir le bloqué",
+      "Tooltip": "Bascule sur l'agent qui réclame une intervention."
+    },
+    "com.dimer47.herdr.ws-next": {
+      "Name": "Space — suivant",
+      "Tooltip": "Workspace suivant, en rotation."
+    },
+    "com.dimer47.herdr.ws-prev": {
+      "Name": "Space — précédent",
+      "Tooltip": "Workspace précédent, en rotation."
+    },
+    "com.dimer47.herdr.ws-new": {
+      "Name": "Space — nouveau",
+      "Tooltip": "Crée un workspace sur un dossier choisi."
+    },
+    "com.dimer47.herdr.ws-close": {
+      "Name": "Space — fermer",
+      "Tooltip": "Ferme le workspace focalisé."
+    },
+    "com.dimer47.herdr.wt-new": {
+      "Name": "Worktree — créer",
+      "Tooltip": "Crée un worktree git et son workspace."
+    },
+    "com.dimer47.herdr.wt-remove": {
+      "Name": "Worktree — retirer",
+      "Tooltip": "Retire le worktree du space focalisé."
+    },
+    "com.dimer47.herdr.pane-split-right": {
+      "Name": "Pane — scinder à droite",
+      "Tooltip": "Scinde le pane courant vers la droite."
+    },
+    "com.dimer47.herdr.pane-split-down": {
+      "Name": "Pane — scinder en bas",
+      "Tooltip": "Scinde le pane courant vers le bas."
+    },
+    "com.dimer47.herdr.pane-zoom": {
+      "Name": "Pane — zoom",
+      "Tooltip": "Bascule le zoom du pane courant."
+    },
+    "com.dimer47.herdr.pane-close": {
+      "Name": "Pane — fermer",
+      "Tooltip": "Ferme le pane focalisé."
+    },
+    "com.dimer47.herdr.pane-focus-left": {
+      "Name": "Pane — focus gauche",
+      "Tooltip": "Déplace le focus vers le pane de gauche."
+    },
+    "com.dimer47.herdr.pane-focus-right": {
+      "Name": "Pane — focus droite",
+      "Tooltip": "Déplace le focus vers le pane de droite."
+    },
+    "com.dimer47.herdr.pane-focus-up": {
+      "Name": "Pane — focus haut",
+      "Tooltip": "Déplace le focus vers le pane du haut."
+    },
+    "com.dimer47.herdr.pane-focus-down": {
+      "Name": "Pane — focus bas",
+      "Tooltip": "Déplace le focus vers le pane du bas."
+    },
+    "com.dimer47.herdr.pane-read": {
+      "Name": "Pane — copier la sortie",
+      "Tooltip": "Copie les 200 dernières lignes dans le presse-papiers."
+    },
+    "com.dimer47.herdr.tab-new": {
+      "Name": "Onglet — nouveau",
+      "Tooltip": "Crée un onglet."
+    },
+    "com.dimer47.herdr.tab-close": {
+      "Name": "Onglet — fermer",
+      "Tooltip": "Ferme l'onglet actif."
+    },
+    "com.dimer47.herdr.tab-prev": {
+      "Name": "Onglet — précédent",
+      "Tooltip": "Onglet précédent du space, en rotation."
+    },
+    "com.dimer47.herdr.tab-next": {
+      "Name": "Onglet — suivant",
+      "Tooltip": "Onglet suivant du space, en rotation."
+    },
+    "com.dimer47.herdr.server": {
+      "Name": "Serveur — état",
+      "Tooltip": "État, version et compatibilité du serveur Herdr."
+    },
+    "com.dimer47.herdr.open-herdr": {
+      "Name": "Ouvrir Herdr",
+      "Tooltip": "Ouvre Herdr dans le Terminal."
+    },
+    "com.dimer47.herdr.command": {
+      "Name": "Commande libre",
+      "Tooltip": "Exécute une commande Herdr non couverte par une action dédiée."
+    }
+  }
+}

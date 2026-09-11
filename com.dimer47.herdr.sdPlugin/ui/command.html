@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+<body>
+  <sdpi-item label="Command">
+    <sdpi-select setting="args" placeholder="Choose…">
+      <option value="agent list">Agents — list</option>
+      <option value="workspace list">Spaces — list</option>
+      <option value="worktree list">Worktrees — list</option>
+      <option value="tab list">Tabs — list</option>
+      <option value="session list">Sessions — list</option>
+      <option value="status">Server — status</option>
+      <option value="server reload-config">Server — reload config</option>
+      <option value="integration status">Integrations — status</option>
+      <option value="integration status --outdated-only">Integrations — outdated</option>
+      <option value="config check">Config — check</option>
+      <option value="pane resize --direction right">Pane — resize right</option>
+      <option value="pane resize --direction down">Pane — resize down</option>
+    </sdpi-select>
+  </sdpi-item>
+
+  <sdpi-item label="Or raw command">
+    <sdpi-textfield setting="args" placeholder="e.g. agent prompt my-agent &quot;Continue.&quot;"></sdpi-textfield>
+  </sdpi-item>
+
+  <sdpi-item label="Key title">
+    <sdpi-textfield setting="libelle" placeholder="e.g. Agents"></sdpi-textfield>
+  </sdpi-item>
+
+  <sdpi-item label="Notify result">
+    <sdpi-checkbox setting="notifier"></sdpi-checkbox>
+  </sdpi-item>
+</body>
+</html>

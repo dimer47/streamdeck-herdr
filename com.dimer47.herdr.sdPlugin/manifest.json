@@ -1,0 +1,454 @@
+{
+    "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+    "Name": "Herdr",
+    "Version": "1.0.0.0",
+    "Author": "Dimitri Iachi",
+    "Description": "Control Herdr from your Stream Deck: agents, spaces, worktrees, panes.",
+    "Category": "Herdr",
+    "CategoryIcon": "imgs/category",
+    "Icon": "imgs/plugin",
+    "URL": "https://herdr.dev",
+    "SDKVersion": 2,
+    "UUID": "com.dimer47.herdr",
+    "CodePath": "bin/plugin.js",
+    "Nodejs": {
+        "Version": "20",
+        "Debug": "enabled"
+    },
+    "Software": {
+        "MinimumVersion": "6.5"
+    },
+    "OS": [
+        {
+            "Platform": "mac",
+            "MinimumVersion": "13"
+        }
+    ],
+    "Actions": [
+        {
+            "Name": "Agents — status",
+            "UUID": "com.dimer47.herdr.agents-status",
+            "Icon": "imgs/actions/agents-status",
+            "Tooltip": "Number of agents per state, refreshed automatically.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/agents-status",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Agents — unblock",
+            "UUID": "com.dimer47.herdr.agent-unblock",
+            "Icon": "imgs/actions/agent-unblock",
+            "Tooltip": "Sends Escape to the first blocked agent.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/agent-unblock",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Agents — confirm",
+            "UUID": "com.dimer47.herdr.agent-enter",
+            "Icon": "imgs/actions/agent-enter",
+            "Tooltip": "Sends Enter to the first blocked agent.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/agent-enter",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Agents — resume",
+            "UUID": "com.dimer47.herdr.agent-continue",
+            "Icon": "imgs/actions/agent-continue",
+            "Tooltip": "Submits \"Continue.\" to the agent in the focused space.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/agent-continue",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Agents — interrupt",
+            "UUID": "com.dimer47.herdr.agent-stop",
+            "Icon": "imgs/actions/agent-stop",
+            "Tooltip": "Sends Ctrl+C to the agent in the focused space.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/agent-stop",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Agents — show blocked",
+            "UUID": "com.dimer47.herdr.agent-focus",
+            "Icon": "imgs/actions/agent-focus",
+            "Tooltip": "Focuses the agent that needs attention.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/agent-focus",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Space — next",
+            "UUID": "com.dimer47.herdr.ws-next",
+            "Icon": "imgs/actions/ws-next",
+            "Tooltip": "Next workspace, wrapping around.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/ws-next",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Space — previous",
+            "UUID": "com.dimer47.herdr.ws-prev",
+            "Icon": "imgs/actions/ws-prev",
+            "Tooltip": "Previous workspace, wrapping around.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/ws-prev",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Space — new",
+            "UUID": "com.dimer47.herdr.ws-new",
+            "Icon": "imgs/actions/ws-new",
+            "Tooltip": "Creates a workspace in a chosen folder.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/ws-new",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Space — close",
+            "UUID": "com.dimer47.herdr.ws-close",
+            "Icon": "imgs/actions/ws-close",
+            "Tooltip": "Closes the focused workspace.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/ws-close",
+                    "TitleAlignment": "bottom"
+                }
+            ],
+            "PropertyInspectorPath": "ui/confirm.html"
+        },
+        {
+            "Name": "Worktree — create",
+            "UUID": "com.dimer47.herdr.wt-new",
+            "Icon": "imgs/actions/wt-new",
+            "Tooltip": "Creates a Git worktree and its workspace.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/wt-new",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Pane — split right",
+            "UUID": "com.dimer47.herdr.pane-split-right",
+            "Icon": "imgs/actions/pane-split-right",
+            "Tooltip": "Splits the current pane to the right.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/pane-split-right",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Pane — split down",
+            "UUID": "com.dimer47.herdr.pane-split-down",
+            "Icon": "imgs/actions/pane-split-down",
+            "Tooltip": "Splits the current pane downwards.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/pane-split-down",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Pane — zoom",
+            "UUID": "com.dimer47.herdr.pane-zoom",
+            "Icon": "imgs/actions/pane-zoom",
+            "Tooltip": "Toggles zoom on the current pane.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/pane-zoom",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Tab — new",
+            "UUID": "com.dimer47.herdr.tab-new",
+            "Icon": "imgs/actions/tab-new",
+            "Tooltip": "Creates a tab.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/tab-new",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Server — status",
+            "UUID": "com.dimer47.herdr.server",
+            "Icon": "imgs/actions/server",
+            "Tooltip": "Herdr server state, version and compatibility.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/server",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Open Herdr",
+            "UUID": "com.dimer47.herdr.open-herdr",
+            "Icon": "imgs/actions/open-herdr",
+            "Tooltip": "Opens Herdr in Terminal.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/open-herdr",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Worktree — remove",
+            "UUID": "com.dimer47.herdr.wt-remove",
+            "Icon": "imgs/actions/wt-remove",
+            "Tooltip": "Removes the worktree of the focused space.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/wt-remove",
+                    "TitleAlignment": "bottom"
+                }
+            ],
+            "PropertyInspectorPath": "ui/confirm.html"
+        },
+        {
+            "Name": "Tab — close",
+            "UUID": "com.dimer47.herdr.tab-close",
+            "Icon": "imgs/actions/tab-close",
+            "Tooltip": "Closes the active tab.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/tab-close",
+                    "TitleAlignment": "bottom"
+                }
+            ],
+            "PropertyInspectorPath": "ui/confirm.html"
+        },
+        {
+            "Name": "Pane — focus left",
+            "UUID": "com.dimer47.herdr.pane-focus-left",
+            "Icon": "imgs/actions/pane-focus-left",
+            "Tooltip": "Moves focus to the pane on the left.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/pane-focus-left",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Pane — focus right",
+            "UUID": "com.dimer47.herdr.pane-focus-right",
+            "Icon": "imgs/actions/pane-focus-right",
+            "Tooltip": "Moves focus to the pane on the right.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/pane-focus-right",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Pane — focus up",
+            "UUID": "com.dimer47.herdr.pane-focus-up",
+            "Icon": "imgs/actions/pane-focus-up",
+            "Tooltip": "Moves focus to the pane above.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/pane-focus-up",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Pane — focus down",
+            "UUID": "com.dimer47.herdr.pane-focus-down",
+            "Icon": "imgs/actions/pane-focus-down",
+            "Tooltip": "Moves focus to the pane below.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/pane-focus-down",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Pane — copy output",
+            "UUID": "com.dimer47.herdr.pane-read",
+            "Icon": "imgs/actions/pane-read",
+            "Tooltip": "Copies the last 200 lines of the pane to the clipboard.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/pane-read",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Pane — close",
+            "UUID": "com.dimer47.herdr.pane-close",
+            "Icon": "imgs/actions/pane-close",
+            "Tooltip": "Closes the focused pane.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/pane-close",
+                    "TitleAlignment": "bottom"
+                }
+            ],
+            "PropertyInspectorPath": "ui/confirm.html"
+        },
+        {
+            "Name": "Tab — previous",
+            "UUID": "com.dimer47.herdr.tab-prev",
+            "Icon": "imgs/actions/tab-prev",
+            "Tooltip": "Previous tab of the space, wrapping around.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/tab-prev",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Tab — next",
+            "UUID": "com.dimer47.herdr.tab-next",
+            "Icon": "imgs/actions/tab-next",
+            "Tooltip": "Next tab of the space, wrapping around.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/tab-next",
+                    "TitleAlignment": "bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Custom command",
+            "UUID": "com.dimer47.herdr.command",
+            "Icon": "imgs/actions/command",
+            "Tooltip": "Runs any Herdr command not covered by a dedicated action.",
+            "Controllers": [
+                "Keypad"
+            ],
+            "States": [
+                {
+                    "Image": "imgs/actions/command",
+                    "TitleAlignment": "bottom"
+                }
+            ],
+            "PropertyInspectorPath": "ui/command.html"
+        }
+    ]
+}

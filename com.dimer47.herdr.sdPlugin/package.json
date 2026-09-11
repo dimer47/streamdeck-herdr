@@ -1,0 +1,20 @@
+{
+  "name": "com.dimer47.herdr",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Stream Deck plugin for Herdr, the terminal workspace manager for AI coding agents.",
+  "main": "bin/plugin.js",
+  "license": "MIT",
+  "author": "Dimitri Iachi",
+  "homepage": "https://github.com/dimer47/streamdeck-herdr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimer47/streamdeck-herdr.git"
+  },
+  "bugs": "https://github.com/dimer47/streamdeck-herdr/issues",
+  "keywords": ["streamdeck", "elgato", "herdr", "terminal", "ai-agents"],
+  "private": false,
+  "dependencies": {
+    "@elgato/streamdeck": "^2.1.2"
+  }
+}
