@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/herdr-logo.png" width="128" alt="Herdr">
+  <img src="docs/icon.png" width="128" alt="Herdr for Stream Deck">
 </p>
 
 <h1 align="center">Herdr for Stream Deck</h1>
@@ -138,3 +138,5 @@ MIT — see [LICENSE](LICENSE).
 
 Herdr is an independent project; this plugin is not affiliated with its authors,
 nor with Elgato.
+
+The plugin icon is an original drawing, not the Herdr logo.

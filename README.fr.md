@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/herdr-logo.png" width="128" alt="Herdr">
+  <img src="docs/icon.png" width="128" alt="Herdr for Stream Deck">
 </p>
 
 <h1 align="center">Herdr pour Stream Deck</h1>
@@ -142,3 +142,5 @@ Anglais par défaut, français via `fr.json`. Pour ajouter une langue, copiez `e
 MIT — voir [LICENSE](LICENSE).
 
 Herdr est un projet indépendant ; ce plugin n'est affilié ni à ses auteurs, ni à Elgato.
+
+L'icône du plugin est un dessin original, ce n'est pas le logo de Herdr.
