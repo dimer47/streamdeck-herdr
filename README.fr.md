@@ -34,7 +34,7 @@ Rafraîchissement toutes les 3 secondes. Serveur Herdr arrêté : les touches le
 ## Prérequis
 
 - **macOS 13 ou plus** — ce plugin est mac-only (voir [Limites](#limites))
-- [Stream Deck](https://www.elgato.com/downloads) 6.5+
+- [Stream Deck](https://www.elgato.com/downloads) 6.9+
 - [Herdr](https://herdr.dev) 0.9.0+, avec `herdr` dans `/opt/homebrew/bin` ou `/usr/local/bin`
 
 ## Installation

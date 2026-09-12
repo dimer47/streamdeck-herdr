@@ -33,7 +33,7 @@ Titles refresh every 3 seconds. When the Herdr server is down, keys say so.
 ## Requirements
 
 - **macOS 13 or later** — this plugin is macOS-only (see [Limitations](#limitations))
-- [Stream Deck](https://www.elgato.com/downloads) 6.5+
+- [Stream Deck](https://www.elgato.com/downloads) 6.9+
 - [Herdr](https://herdr.dev) 0.9.0+, with `herdr` in `/opt/homebrew/bin` or `/usr/local/bin`
 
 ## Install

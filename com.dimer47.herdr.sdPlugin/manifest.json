@@ -8,7 +8,7 @@
     "CategoryIcon": "imgs/category",
     "Icon": "imgs/plugin",
     "URL": "https://herdr.dev",
-    "SDKVersion": 2,
+    "SDKVersion": 3,
     "UUID": "com.dimer47.herdr",
     "CodePath": "bin/plugin.js",
     "Nodejs": {
@@ -16,7 +16,7 @@
         "Debug": "enabled"
     },
     "Software": {
-        "MinimumVersion": "6.5"
+        "MinimumVersion": "6.9"
     },
     "OS": [
         {

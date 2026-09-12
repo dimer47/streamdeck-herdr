@@ -38,6 +38,12 @@ First release.
 - Every Herdr call goes through a helper that never throws — a failing command shows an
   alert on the key instead of killing the plugin.
 
+### Requirements
+
+- macOS 13 or later
+- Stream Deck 6.9 or later
+- Herdr 0.9.0 or later
+
 ### Known limitations
 
 - **macOS only.** Folder pickers, text prompts and confirmations use `osascript`;
